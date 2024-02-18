@@ -1,4 +1,5 @@
-
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 // Array of questions for user to generate README.md
 const questions = [
