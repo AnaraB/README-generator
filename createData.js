@@ -13,14 +13,13 @@ function createData(answer){
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
+  * [Contributors](#contributors)
   * [License](#license)
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ## Installation (Dependancies)
-  To install dependencies, run these commands:
-
+  ## Installation
+  To install dependencies, run the following command:
   \`\`\`
   ${answer.dependencies}
   \`\`\`
