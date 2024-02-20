@@ -54,3 +54,25 @@ const questions = [
   }
 
 ];
+
+inquirer.prompt(questions).then(answer =>{
+
+    let data = createData(answer);
+    fs.writeFileSync(`${answer.title}.md`, data)
+});
+
+function createData(answer){
+    return `
+
+    ${answer.title}
+
+    ##Table of Contents
+
+    * [Description](#description)
+
+    ##Description
+    ${answer.description}
+    
+    `
+
+}
