@@ -22,7 +22,7 @@ const questions = [
   {
       type: "input",
       name: "description",
-      message: "Describe about your project:"
+      message: "Describe your project by answering the following questions: What was your motivation? Why did you build this project? What problem does it solve?"
   },
   {
       type: "list",
@@ -45,12 +45,12 @@ const questions = [
   {
       type: "input",
       name: "usage",
-      message: "What does the usage of this repo?",
+      message: "Provide instructions and examples for use. Include screenshots as needed."
   },
   {
       type: "input",
-      name: "contributors",
-      message: "Who are the contributors of this repo?",
+      name: "credits",
+      message: "List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list them here too."
   }
 
 ];
@@ -61,18 +61,3 @@ inquirer.prompt(questions).then(answer =>{
     fs.writeFileSync(`${answer.title}.md`, data)
 });
 
-function createData(answer){
-    return `
-
-    ${answer.title}
-
-    ##Table of Contents
-
-    * [Description](#description)
-
-    ##Description
-    ${answer.description}
-    
-    `
-
-}
