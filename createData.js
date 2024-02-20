@@ -4,12 +4,10 @@ function createData(answer){
 
   # ${answer.title}
   ## GitHub URL 🌐
-  [${data.github}](https://github.com/${data.github}/)
+  [${answer.github}](https://github.com/${answer.github}/)
 
   ## Description
   ${answer.description}
-
-
 
   ## Table of Contents
 
@@ -18,9 +16,25 @@ function createData(answer){
   * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
+  
+  ## Installation (Dependancies)
+  To install dependencies, run these commands:
 
+  \`\`\`
+  ${answer.dependencies}
+  \`\`\`
+ 
+  ## Usage
+  ${answer.usage}
 
+  ## Credits
+  ${answer.credits}
+
+  ## License
+  [MIT](https://chooselicense.com/licenses/${answer.license}/)
 
   `
 
 }
+
+module.exports = createData;

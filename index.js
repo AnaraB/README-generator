@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const createData = require('./createData');
+
 
 // Array of questions for user to generate README.md
 const questions = [
@@ -35,12 +37,6 @@ const questions = [
       name: "dependencies",
       message: "Any dependencies to install?",
       default: "npm i"
-  },
-  {
-      type: "input",
-      name: "test",
-      message: "What command should be run to run tests?",
-      default: "npm test"
   },
   {
       type: "input",
