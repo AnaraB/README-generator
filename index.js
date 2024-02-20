@@ -9,17 +9,17 @@ const questions = [
   {
       type: "input",
       name: "github",
-      message: "What's your Github username?"
+      message: "What is  your Github username?"
   },
   {
       type: "input",
       name: "email",
-      message: "What's your email?"
+      message: "What is your email?"
   },
   {
       type: "input",
       name: "title",
-      message: "What's the name of your project?"
+      message: "What is the name of your project?"
   },
   {
       type: "input",
@@ -45,8 +45,14 @@ const questions = [
   },
   {
       type: "input",
-      name: "credits",
+      name: "contributors",
       message: "List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list them here too."
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "What command should be run to run tests?",
+    default: "npm test"
   }
 
 ];
