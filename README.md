@@ -21,7 +21,8 @@ A command-line application, based on Node.js,  to generate a professional README
 ![readme generator demo](/assets/readme-demo.png)
 
 -------------------------------------
-Walkthrough video: ![readme demo video](/assets/readme-generator_video.mp4)
+Walkthrough video:
+<https://github.com/AnaraB/README-generator/assets/95289813/246b6e3a-803d-409e-bf9e-52367162903d>
 ---------------------------------------
 ## Contributor 
 GitHub: <https://github.com/AnaraB/README-generator>
